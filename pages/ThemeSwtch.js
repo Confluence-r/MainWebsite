@@ -6,6 +6,27 @@ export default function ThemeSwitch({theme, settheme}) {
 if (typeof window !== "undefined") {
 const toggleSwitch = document.getElementById('checkbox');
 const toggleIcon = document.getElementById('toggle-icon');
+let Time = new Date;
+Time = Time.getHours()
+console.log(Time)
+
+function automaticToggle() {
+  if (Time>=18) {
+      darkMode();
+    console.log('Night');
+    toggleSwitch.checked = true;
+   
+  } else {
+    lightMode();
+    console.log('Morning');
+    toggleSwitch.checked = false;
+  }
+}
+
+ useEffect(() => {
+    automaticToggle();
+  }, []);
+
 // Dark Mode Styles
 function darkMode() {
   
@@ -34,7 +55,10 @@ function switchTheme(event) {
     
     lightMode();
   }
+
+
 }
+
 
 // Event Listener
 toggleSwitch.addEventListener('change', switchTheme);

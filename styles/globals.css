@@ -9,6 +9,7 @@
    --red: #EBA1A4;
    --yellow: #E8D2A3;
    --orange: #EFB2A0;
+   --SERP: pink;
 }
 
 [data-theme="dark"] {
@@ -21,6 +22,7 @@
    --red: red;
    --yellow: yellow;
    --orange:orange;
+   --SERP: #DA1254;
 }
 
 
@@ -67,6 +69,10 @@ button, .button {
 .audit {
   padding: 1rem;
   text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .audit > form > input,button {
@@ -88,6 +94,7 @@ button, .button {
   position: fixed;
   right: 25px;
   bottom: 10px;
+
 }
 
 .theme-switch-wrapper span {
@@ -99,7 +106,7 @@ button, .button {
   position: relative;
   top: -4px;
   right: 5px;
-  color: var(--on-background);
+  color: var(--secondary-color);
 }
 
 .theme-switch {
@@ -154,5 +161,5 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
   margin-right: 5px;
-  color:  var(--background);
+  color:  var(--secondary-color);
 }
