@@ -14,18 +14,18 @@ const [theme, settheme] = useState("");
   </Head>
 	<div className={`${styles.box} ${styles.yellow} ${styles.main}`}>
 		<Image layout="fill" src={`/light/uparrow${theme}.gif`}/><div className={styles.middle}>
-    <div className={styles.text}>Home</div>
+    <div className={styles.text}>HOME</div>
   </div></div>
 	<a href="./" className={`${styles.box} ${styles.white}`}>
 	<Image layout="fill" src={`/light/river${theme}.gif`}/>
 		<div className={styles.middle}>
-    <div className={styles.text}>About Us</div>
+    <div className={styles.text}>ABOUT US</div>
   </div>
 	</a>
 	<a href="./" className={`${styles.box2} ${styles.orange}`}>
 	<Image layout="fill" src={`/light/button${theme}.gif`}/>
 	<div className={styles.middle}>
-    <div className={styles.text}>Our Work</div>
+    <div className={styles.text}>OUR WORK</div>
   </div></a>
 	<a  className={`${styles.box2} ${styles.pink}`}>
   <Serp/>
@@ -35,7 +35,7 @@ const [theme, settheme] = useState("");
 	<a  href="./" className={`${styles.box} ${styles.lightblue}`}>
 <Image layout="fill" src={`/light/Arrows${theme}.gif`}/>
 	<div className={styles.middle}>
-    <div className={styles.text}>Blog</div>
+    <div className={styles.text}>BLOG</div>
   </div></a>
 	<a href="./" className={`${styles.box} ${styles.yellow}`}>
 <Image layout="fill" src={`/light/confluencer${theme}.gif`}/>
@@ -55,9 +55,11 @@ const [theme, settheme] = useState("");
   <a href="./" className={`${styles.box2} ${styles.white}`}>
   <Image layout="fill" src={`/light/logo${theme}.png`}/>
   <div className={styles.middle}>
-    <div className={styles.text}>Contact Us</div>
+    <div className={styles.text}>CONTACT US</div>
   </div></a>
   <ThemeSwitch theme={theme} settheme={settheme}/>
+  
 </div>
+
   	)
 }

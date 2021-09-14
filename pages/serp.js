@@ -11,7 +11,7 @@ const [Results, setResults] = useState(null);
 
 function Search(e) {
 e.preventDefault();
-
+document.getElementById('logo').style.display="block"
 const options = {
   method: 'POST',
   url: 'https://google-search3.p.rapidapi.com/api/v1/serp/',
@@ -25,11 +25,12 @@ const options = {
 
 axios.request(options).then(function (response) {
   setResults(response);
-             
+  document.getElementById('logo').style.display="none";           
         
 
 }).catch(function (error) {
   console.error(error);
+  
 });
 
 }
@@ -44,6 +45,9 @@ axios.request(options).then(function (response) {
 <input id="keyword" type="text" name="" placeholder="Keyword" value={Keyword} onChange={(e)=> setKeyword(event.target.value)}/>
 <input id="url" type="text" name="" placeholder="URL" value={url} onChange={(e)=> seturl(event.target.value)}/>
 <button type="submit" >Go</button>
+<div id="logo" className="loadingio-spinner-rolling-kswyn6f3gj7"><div className="ldio-c9p079igqka">
+<div></div>
+</div></div>
 </form>
 <p id="position"></p>
 </div>
