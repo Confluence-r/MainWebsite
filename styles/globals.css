@@ -77,19 +77,13 @@ button, .button {
 
 footer {
   background-color: var(--primary-color);
-
+  position: static;
+  bottom: 0;
   width: 100%;
   padding: 0.5rem;
   z-index: 3;
   color: white;
   padding-left: 1rem;
-}
-
-footer > p {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-content: center;
 }
 
 .header ul {
@@ -579,6 +573,10 @@ input:checked + .slider::before {
 @keyframes zoom {
   from {top: 0; color:white}
   to {top: 50px; color: #F5F5DC;}
+}
+
+footer {
+  display: none;
 }
 
 }
