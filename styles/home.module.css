@@ -92,6 +92,7 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  background-color: rgba(228,233,237,0.7);
 }
 
 .box:hover .blue .white .black .lightblue {
